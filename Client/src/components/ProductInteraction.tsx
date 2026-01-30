@@ -46,7 +46,7 @@ const ProductInteraction = ({
       selectedColor,
       selectedSize,
     });
-    toast.success("Product added to cart")
+    toast.success("Product added to cart");
   };
   return (
     <div className="flex flex-col gap-4 mt-4">
@@ -56,7 +56,7 @@ const ProductInteraction = ({
         <div className="flex items-center gap-2">
           {product.sizes.map((size) => (
             <div
-              className={`cursor-pointer border-1 p-[2px] ${
+              className={`cursor-pointer border p-[2px] ${
                 selectedSize === size ? "border-gray-600" : "border-gray-300"
               }`}
               key={size}
